@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/image1.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .name{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="name">OurWeather.com</h1>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="city-name" type="text" class="form-control" placeholder="Search for a City">
+                <div class="input-group-append">
+                    <button onclick="searchTemperature()" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="image-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <h1 id="city">New Delhi</h1>
+            <h3><span id="temp">20</span>&deg;C</h3>
+            <h1 class="lead" id="weather">Clouds</h1>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
